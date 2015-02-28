@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+             <div class="phone_and_auth">
+                 <div class="phone">
+                       8 (4852) 000-000
+                 </div>
+                <div class="auth">
+                   Войти
+                </div>
+            </div>
+
+            <div class="logo">
+                <span class="big">ПИЦЦА</span>
+                <br />
+                <span class="small">Мародеров</span>
+            </div>
+
+            <div class="menu">
+                <span>Главная</span>
+                <span>Отзывы</span>
+                <span>Контакты</span>
+                <span id="basket">Корзина:0</span>
+            </div>
+            
+            
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+        Андрюша Сухоручкин (Сохатый), Юляша Полетаева (Бродяга), Петя Борисов (Лунатик)
+        Представляют вам Пиццу Мародеров
+        </div>
+
+
+
+
+
+    </form>
+</body>
+</html>
